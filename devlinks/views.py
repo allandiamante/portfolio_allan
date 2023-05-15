@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
+from django.http import HttpResponse
 
 
 
-class SignUpView(TemplateView):
-    template_name = "links.html"
+def index(request):
+    return render(request, 'links.html')
+    # template_name = "links.html"
