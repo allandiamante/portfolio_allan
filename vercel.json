@@ -3,7 +3,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "django-ads-fusion/wsgi.py",
+        "src": "allandevlinks/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
@@ -22,7 +22,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "django-ads-fusion/wsgi.py"
+        "dest": "allandevlinks/wsgi.py"
       }
     ]
   }
