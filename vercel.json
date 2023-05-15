@@ -1,10 +1,17 @@
 {
-    "builds": [{
+    "version": 2,
+    "builds": [
+        {
         "src": "allandevlinks/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-    }],
+    }
+],
     "routes": [
+        {
+            "src": "/static/(.*)",
+            "dest": "/static/$1"
+        },
         {
             "src": "/(.*)",
             "dest": "allandevlinks/wsgi.py"
