@@ -68,7 +68,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "allandevlinks.wsgi.application"
+# WSGI_APPLICATION = "allandevlinks.wsgi.application"
+WSGI_APPLICATION = "vercel_app.wsgi.app"
 
 
 # Database
@@ -130,4 +131,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 import os
 if os.environ.get("VERCEL"):
-    STATICFILES_DIRS = os.path.join(BASE_DIR, 'staticfiles')
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
