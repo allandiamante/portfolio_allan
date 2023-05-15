@@ -69,8 +69,8 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = "allandevlinks.wsgi.application"
-WSGI_APPLICATION = "vercel_app.wsgi.app"
+WSGI_APPLICATION = "allandevlinks.wsgi.app"
+#WSGI_APPLICATION = "vercel_app.wsgi.app"
 
 
 # Database
