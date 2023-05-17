@@ -6,5 +6,5 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, 'links.html')
+    return render(request, 'index.html')
     # template_name = "links.html"
