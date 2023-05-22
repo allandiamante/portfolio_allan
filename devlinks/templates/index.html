@@ -11,6 +11,9 @@
         <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
         <!-- Google fonts-->
         
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
@@ -120,55 +123,81 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5"><i class="fab fa-dev"></i> Skills</h2>
-                    <div class="subheading mb-3">Linguagens de Programação & Ferramentas</div>
                     <div class="container mb-3">
-                        <div class="col-6"> 
-                            <ul class="list-inline dev-icons ">                               
-                               
-                                <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 45%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <li class="list-inline-item"><i class="fab fa-unity"></i></li>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div> 
-                                {% comment %} <li class="list-inline-item"><i class="fab fa-dj"></i></li>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>  {% endcomment %}
-                            </ul>
+                        <div class="row">
+                            <div class="col-4"> 
+                                <div class="subheading mb-3">Linguagens de Programação</div>
+                                <ul class="list-inline dev-icons ">                               
+                                
+                                    <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>  
+                                    <li class="list-inline-item"><i class="fa-solid fa-c"></i></i></li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>                                    
+                                    <li class="list-inline-item"><i class="fa-brands fa-js"></i></i></li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <li class="list-inline-item"><i class="fa-brands fa-java"></i></i></li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 35%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <li class="list-inline-item"><i class="fa-brands fa-php"></i></i></li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 30%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>                                    
+                                </ul>
+                            </div>
+                            <div class="col-2">
+                            </div>
+                            <div class="col-4"> 
+                                <div class="subheading mb-3">Ferramentas</div>
+                                <ul class="list-inline dev-icons ">     
+                                    <li class="list-inline-item"><img src="{% static 'assets/icons/djangoproject.svg' %}" style="width: 3rem;"></li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-sucess" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>                     
+                                    <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-sucess" role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>    
+                                    <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-sucess" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-sucess" role="progressbar" style="width: 45%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>                                    
+                                    <li class="list-inline-item"><i class="fab fa-unity"></i></li>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-sucess" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div> 
+                                    
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="subheading mb-3">Workflow</div>
+                    <div class="subheading mb-3">Paradigmas</div>
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
+                            Paradigma Orientado a Objeto
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
+                            Paradigma Funcional
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
+                            Paradigma Imperativo
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
+                            Paradigma Declarativo
                         </li>
                     </ul>
                 </div>
@@ -177,9 +206,14 @@
             <!-- Contato-->
             <section class="resume-section" id="contact">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Contato</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                    <h2 class="mb-5">Curiosidades e Contato</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item-primary">Além de ser um programador, eu também sou um entusiasta do acampamento ao ar livre. Adoro passar meu tempo explorando a natureza.</li>
+                        <li class="list-group-item-dark">Quando não estou codificando, arrisco me aventurar na cozinha. Sou um cozinheiro amador apaixonado, sempre aberto e em busca de novas receitas e sabores.</li>
+                        <li class="list-group-item-warning">Adoro filmes e seriados, acredito que cada história pode nos contar muito sobre nós mesmos.</li>
+                        <li class="list-group-item-info">Me considero uma pessoa bem metódica, sinto que cada passo tem que estar definido para poder chegar a um bom resultado.</li>
+                        <li class="list-group-item-danger">Por último, mas não menos importante, sou um adorador de gatos. Adoro passar meu tempo com meus companheiros felinos, desfrutando de suas brincadeiras e carinho.</li>
+                      </ul>
                 </br>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/allan-diamante/"><i class="fab fa-linkedin-in"></i></a>
