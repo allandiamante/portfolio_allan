@@ -23,7 +23,7 @@
 }
 
 .shadow-light {
-  box-shadow: 7px 7px 15px -10px #bbcfda, -4px -4px 13px #ffffff,
+  box-shadow: 7px 7px 15px -10px #3e4549, -4px -4px 13px #000000,
     inset 7px 7px 3px rgba(209, 217, 230, 0.35),
     inset -11px -11px 3px rgba(255, 255, 255, 0.3)
 }
