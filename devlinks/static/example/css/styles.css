@@ -4171,9 +4171,10 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
+  background-color: #6d6e83;
   --bs-card-bg: #fff;
   --bs-card-img-overlay-padding: 1rem;
-  --bs-card-group-margin: 0.75rem;
+  --bs-card-group-margin: 0.75rem;  
   position: relative;
   display: flex;
   flex-direction: column;
