@@ -11,6 +11,18 @@
   transition: 0.5s;
 }
 
+.cardflag {
+  position: absolute;
+  border-radius: 5px;
+  left:auto;
+  background-color: rgba(250, 20, 20, 0.8);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  transform: rotate(340deg);
+  transform-origin: top right;
+}
+
 
 .theme-container:hover {
   opacity: 0.8;
