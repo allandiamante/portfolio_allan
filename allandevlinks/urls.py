@@ -20,8 +20,7 @@ from devlinks.views import index
 from django.conf import settings
 from django.conf.urls.static import static
 
-
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", index, name="home")
-]  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path("", index, name="home"),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

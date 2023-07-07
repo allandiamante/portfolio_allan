@@ -1,0 +1,36 @@
+{% load static %}
+
+{% block email %}
+
+<div class="row">
+
+        <div class  ="col-md-10 col-sm-12  ">
+            <h3>Envie um Email para Contato</h3>
+            <form method="POST" action="{% url 'home' %}">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">E-mail</label>
+                    <input type="text" class="form-control" name="email" placeholder="recrutamento@tec.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Assunto</label>
+                    <input type="text" class="form-control" name="name" placeholder="Vaga de Desenvolvedor" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Corpo</label>
+                    <textarea name="message" class="form-control" placeholder="Detalhes sobre a vaga" required></textarea>
+                </div>
+
+                <button class="btn btn-primary mt-2" type="submit"> Enviar </button>
+
+            </form>
+        </div>
+
+
+
+    </div>
+</div>
+
+{% endblock %}

@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "devlinks",
+    "django.core.mail.backends.smtp",
 ]
 
 MIDDLEWARE = [
@@ -136,3 +138,10 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 if os.environ.get("VERCEL"):
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = "allandiamantedesouza@gmail.com"
+EMAIL_HOST_PASSWORD = "qfwihjwiqxypteqa"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
