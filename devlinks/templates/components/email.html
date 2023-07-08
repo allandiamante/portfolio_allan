@@ -4,9 +4,9 @@
 
 <div class="row">
 
-        <div class  ="col-md-10 col-sm-12  ">
+        <div class  ="col-md-12 col-sm-12  shadow-dark p-5" style="border-radius: 10px;">
             <h3>Envie um Email para Contato</h3>
-            <form method="POST" action="{% url 'home' %}">
+            <form method="POST" class="" action="{% url 'home' %}">
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="exampleFormControlInput1">E-mail</label>
