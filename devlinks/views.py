@@ -28,15 +28,15 @@ def index(request):
     # template_name = "links.html"
 
 def downloadpdf(request):
-    print('ué')
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    filename = 'test.txt'
-    filepath = base_dir + '/files/' + filename
-    thefile = filepath
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    thefile = 'AllanDiamanteCV.pdf'
+    file_path = os.path.join(BASE_DIR, 'files', thefile)
     filename = os.path.basename(thefile)
     chunk_size = 8192
-    response = StreamingHttpResponse(FileWrapper(open(thefile, 'rb'),chunk_size),
-        content_type = mimetypes.guess_type(thefile)[0])
-    response['Content-Length'] = os.path.getsize(thefile)
-    response['Content-Disposition'] = "Attachment;filename=%s" % filename
+
+    response = StreamingHttpResponse(FileWrapper(open(file_path, 'rb'), chunk_size),
+                                     content_type=mimetypes.guess_type(file_path)[0])
+    response['Content-Length'] = os.path.getsize(file_path)
+    response['Content-Disposition'] = "attachment; filename=%s" % filename
+
     return response
