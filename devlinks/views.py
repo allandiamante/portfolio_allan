@@ -9,7 +9,9 @@ from django.conf import settings
 
 def index(request):
     if request.method == 'POST':
-        message = request.POST['message']
+        message = "Sua mensagem foi enviada para o e-mail: allandiamantedesouza@gmail.com \nAgradeço o contato e retornarei o mais breve possivel.\n O conteudo da mensagem é: "
+        message = message + request.POST['message']
+        print(message)
         email = request.POST['email']
         name = request.POST['name']
         send_mail(
