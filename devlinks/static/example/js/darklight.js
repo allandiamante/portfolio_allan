@@ -1,6 +1,6 @@
 document.body.style="background-color: var(--bs-dark);transition: 0.5s;"
-const sun = "https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg";
-const moon = "https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg"
+const sun = "static/example/assets/img/iconsol.svg";
+const moon = "static/example/assets/img/iconslua.png"
 
 var theme = "dark";
   const root = document.querySelector(":root");
