@@ -15,9 +15,9 @@ def index(request):
         message = message + request.POST['message']
         print(message)
         email = request.POST['email']
-        title_email = request.POST['title_email']
+        title_email = request.POST['title']
         send_mail(
-            'title_email', # titulo
+            'title', # titulo
             message,
             'settings.EMAIL_HOST_USER',
             [email],
